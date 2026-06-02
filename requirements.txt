@@ -1,4 +1,9 @@
-opencv-python>=4.8.0
-ultralytics>=8.0.0
-pyserial>=3.5
-python-dotenv>=1.0.0
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+sqlalchemy
+opencv-python
+ultralytics
+pyserial
+python-dotenv
