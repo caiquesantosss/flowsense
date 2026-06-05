@@ -16,8 +16,6 @@ class WebSocketManager:
         print(f"[WS MANAGER] Celular desconectado. Conexões restantes: {len(self.active_connections)}")
 
     async def broadcast(self, message: dict):
-        # Esse print é crucial! Ele vai nos dizer se o Python está tentando enviar algo
-        # e para quantas telas ele está enviando.
         print(f"[WS BROADCAST] Tentando enviar para {len(self.active_connections)} aparelhos. Dados: {message}")
         
         for connection in self.active_connections:

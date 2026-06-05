@@ -104,7 +104,7 @@ async def rodar_visao_computacional_async():
             arduino_service.atualizar_leds(quantidade_atual)
 
         # 2. Transmite os dados em tempo real para o celular via WebSocket
-        await ws_manager.broadcast({
+        await ws_manager.broadcast({ 
             "quantidade_atual": quantidade_atual,
             "status_ambiente": status_ambiente,
             "timestamp": int(time.time())
